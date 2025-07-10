@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Sophia Portfolio - Interests</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">Maria Sophia</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="interests.html" class="nav__link active">Interests</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Interests Header -->
+        <section class="page-header section">
+            <div class="page-header__content">
+                <h1 class="page-title">My Interests</h1>
+                <p class="page-subtitle">Beyond coding - the activities and passions that inspire me</p>
+            </div>
+        </section>
+
+        <!-- Main Interests -->
+        <section class="interests-main section">
+            <div class="interests__container">
+                <!-- Volleyball & Sports -->
+                <div class="interest__card interest__card--featured">
+                    <div class="interest__image">
+                        <img src="images/volleyball.jpeg" alt="Volleyball" style="max-width:100%; max-height:dynamic; border-radius:12px; margin-bottom:0.5rem;">
+                        <i class='bx bx-volleyball interest__icon'></i>
+                    </div>
+                    <div class="interest__content">
+                        <h3 class="interest__title">🏐 Volleyball & Sports</h3>
+                        <p class="interest__description">I enjoy staying active through volleyball and love the teamwork and strategy involved in the sport. Playing volleyball has taught me valuable lessons about coordination, communication, and working together towards a common goal.</p>
+                        <div class="interest__details">
+                            <h4>What I Love About It:</h4>
+                            <ul>
+                                <li>Building team chemistry and communication</li>
+                                <li>The quick decision-making and strategy</li>
+                                <li>Staying physically active and healthy</li>
+                                <li>Meeting new people through sports communities</li>
+                            </ul>
+                        </div>
+                        <div class="interest__skills">
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Quick Thinking</span>
+                            <span class="skill-tag">Physical Fitness</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div class="interest__card interest__card--featured">
+                    <div class="interest__image">
+                        <img src="images/japan.jpeg" alt="japan" style="max-width:100%; max-height:dynamic; border-radius:12px; margin-bottom:0.5rem;">
+                    </div>
+                    <div class="interest__content">
+                        <h3 class="interest__title">✈️ Travelling</h3>
+                        <p class="interest__description">I love exploring different cultures, trying new foods, and experiencing diverse ways of life. Travel broadens my perspective and helps me understand how technology impacts different communities around the world.</p>
+                        <div class="interest__details">
+                            <h4>Favorite Destinations:</h4>
+                            <ul>
+                                <li>Japan - Amazing technology and culture blend</li>
+                                <li>Local Southeast Asian countries</li>
+                                <li>Urban cities with rich history</li>
+                                <li>Places with unique architectural designs</li>
+                            </ul>
+                        </div>
+                        <div class="interest__skills">
+                            <span class="skill-tag">Cultural Awareness</span>
+                            <span class="skill-tag">Adaptability</span>
+                            <span class="skill-tag">Planning</span>
+                            <span class="skill-tag">Open-mindedness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing & Vlogging -->
+                <div class="interest__card interest__card--featured">
+                    <div class="interest__image">
+                        <img src="images/edit.jpeg" alt="edit" style="max-width:100%; max-height:dynamic; border-radius:12px; margin-bottom:0.5rem;">
+                    </div>
+                    <div class="interest__content">
+                        <h3 class="interest__title">🎬 Video Editing & Vlogging</h3>
+                        <p class="interest__description">I create travel vlogs on YouTube using CapCut, combining storytelling with digital creativity. This hobby allows me to merge my technical skills with creative expression while sharing my experiences with others.</p>
+                        <div class="interest__details">
+                            <h4>Creative Process:</h4>
+                            <ul>
+                                <li>Planning and scripting video content</li>
+                                <li>Filming with attention to composition and lighting</li>
+                                <li>Editing with CapCut for smooth transitions</li>
+                                <li>Adding music, effects, and storytelling elements</li>
+                            </ul>
+                        </div>
+                        <div class="interest__skills">
+                            <span class="skill-tag">Video Editing</span>
+                            <span class="skill-tag">Storytelling</span>
+                            <span class="skill-tag">Creative Design</span>
+                            <span class="skill-tag">Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight Video Section -->
+        <section class="spotlight section">
+            <h2 class="section-title">🌟 Spotlight Video</h2>
+            <div class="spotlight__container">
+                <div class="video__card" id="spotlight-carousel" style="position:relative; min-height: 520px;">
+                    <button class="carousel-arrow left" id="spotlight-prev" aria-label="Previous video"></button>
+                    <button class="carousel-arrow right" id="spotlight-next" aria-label="Next video"></button>
+                    <!-- Carousel wrapper for stacking video and text vertically -->
+                    <div class="spotlight-carousel-stack" style="position:relative;">
+                        <!-- Slide 1 -->
+                        <div class="spotlight-slide-wrapper" style="display:block; opacity:1; transition:opacity 0.6s cubic-bezier(.4,0,.2,1);">
+                            <div class="video__embed spotlight-slide" style="opacity:1; transition:opacity 0.6s cubic-bezier(.4,0,.2,1); position:relative; z-index:2;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zp12WliBnnA?si=Kn-4fIoI3I_uvmaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="video__content spotlight-slide-content" style="opacity:1; transition:opacity 0.6s cubic-bezier(.4,0,.2,1); position:relative; z-index:2; background:white;">
+                                <h4>5 days in Boracay: private boat, water sports, shopping, food</h4>
+                                <p>Join me in my 5 days in Boracay, doing watersports, shopping, and exploring the different food!</p>
+                                <div class="video__stats">
+                                    <span><i class='bx bx-map'></i> Boracay, Philippines</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="spotlight-slide-wrapper" style="display:block; opacity:0; position:absolute; top:0; left:0; width:100%; transition:opacity 0.6s cubic-bezier(.4,0,.2,1); pointer-events:none;">
+                            <div class="video__embed spotlight-slide" style="opacity:1; transition:opacity 0.6s cubic-bezier(.4,0,.2,1); position:relative; z-index:1;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/db2gSRNTLDM?si=T4zf3tsi_sESJGv6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="video__content spotlight-slide-content" style="opacity:1; transition:opacity 0.6s cubic-bezier(.4,0,.2,1); position:relative; z-index:1; background:white;">
+                                <h4>japan vlog🍥:osaka, gala yuzawa , kyoto, tokyo | outlet shopping, kimono, exploring! FEB</h4>
+                                <p>Join me on my journey through Japan, where I explored the perfect blend of traditional culture and cutting-edge technology. From bustling Tokyo streets to serene temples, this trip inspired my love for both travel and tech innovation.</p>
+                                <div class="video__stats">
+                                    <span><i class='bx bx-map'></i> Tokyo, Japan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Interests -->
+        <section class="other-interests section">
+            <h2 class="section-title">Other Activities</h2>
+            <div class="activities__grid">
+                <div class="activity__card">
+                    <i class='bx bx-book-reader activity__icon'></i>
+                    <h4>Learning New Technologies</h4>
+                    <p>Always exploring the latest in web development, AI, and cybersecurity</p>
+                </div>
+                <div class="activity__card">
+                    <i class='bx bx-camera activity__icon'></i>
+                    <h4>Photography</h4>
+                    <p>Capturing moments during travels and documenting experiences</p>
+                </div>
+                <div class="activity__card">
+                    <i class='bx bx-music activity__icon'></i>
+                    <h4>Music & Podcasts</h4>
+                    <p>Listening to tech podcasts and music while coding</p>
+                </div>
+                <div class="activity__card">
+                    <i class='bx bx-group activity__icon'></i>
+                    <h4>Community Events</h4>
+                    <p>Participating in tech meetups and student organizations</p>
+                </div>
+                <div class="activity__card">
+                    <i class='bx bx-gamepad2 activity__icon'></i>
+                    <h4>Gaming</h4>
+                    <p>Enjoying strategy games and exploring game development</p>
+                </div>
+                <div class="activity__card">
+                    <i class='bx bx-restaurant activity__icon'></i>
+                    <h4>Food Exploration</h4>
+                    <p>Trying different cuisines and local food scenes while traveling</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Interests Connect to Tech -->
+        <section class="connections section">
+            <h2 class="section-title">How My Interests Shape My Tech Journey</h2>
+            <div class="connections__container">
+                <div class="connection__card">
+                    <h4>🏐 Sports → Teamwork & Agile Methodologies</h4>
+                    <p>Volleyball taught me the importance of communication, quick adaptation, and working towards shared goals - all essential in software development teams.</p>
+                </div>
+                <div class="connection__card">
+                    <h4>✈️ Travel → User Experience & Cultural Awareness</h4>
+                    <p>Experiencing different cultures helps me design more inclusive and accessible user interfaces that work for diverse global audiences.</p>
+                </div>
+                <div class="connection__card">
+                    <h4>🎬 Video Creation → Problem-Solving & Creativity</h4>
+                    <p>Video editing requires technical precision and creative thinking - skills that translate perfectly to coding and UI/UX design.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- About Section -->
+            <div class="footer__about">
+                <h3 class="footer__title">Maria Sophia</h3>
+                <p class="footer__subtitle">Aspiring IT Professional passionate about creating innovative digital solutions and building meaningful connections in the tech industry.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__icon" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="footer__icon" title="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="footer__icon" title="GitHub"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__links">
+                <h4>Quick Links</h4>
+                <ul class="footer__nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__contact">
+                <h4>Get In Touch</h4>
+                <div class="footer__contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <a href="mailto:msdh.ignacio@gmail.com">msdh.ignacio@gmail.com</a>
+                </div>
+                <div class="footer__contact-item">
+                    <i class='bx bx-map'></i>
+                    <span>Singapore</span>
+                </div>
+                <div class="footer__contact-item">
+                    <i class='bx bx-time'></i>
+                    <span>Available for opportunities</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2025 Maria Sophia Danyse Homigop Ignacio. All rights reserved.</p>
+            <div class="footer__badge">
+                <span>Made with</span>
+                <i class='bx bx-heart'></i>
+                <span>and lots of coffee</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Carousel animation logic (carousel with fade transition and side arrows)
+        const wrappers = document.querySelectorAll('#spotlight-carousel .spotlight-slide-wrapper');
+        const prevBtn = document.getElementById('spotlight-prev');
+        const nextBtn = document.getElementById('spotlight-next');
+        let currentSlide = 0;
+        let animating = false;
+
+        prevBtn.innerHTML = "<i class='bx bx-chevron-left'></i>";
+        nextBtn.innerHTML = "<i class='bx bx-chevron-right'></i>";
+
+        function showSpotlightSlide(idx) {
+            if (animating || idx === currentSlide) return;
+            animating = true;
+            const prev = currentSlide;
+            const next = idx;
+
+            // Fade out current
+            wrappers[prev].style.opacity = '0';
+            wrappers[prev].style.pointerEvents = 'none';
+
+            // Fade in next
+            wrappers[next].style.display = 'block';
+            setTimeout(() => {
+                wrappers[next].style.opacity = '1';
+                wrappers[next].style.pointerEvents = 'auto';
+            }, 10);
+
+            // After transition, hide previous
+            setTimeout(() => {
+                wrappers[prev].style.display = 'block';
+                wrappers[prev].style.pointerEvents = 'none';
+                wrappers[next].style.display = 'block';
+                currentSlide = next;
+                // Hide prev only if not current
+                wrappers.forEach((el, i) => {
+                    if (i !== currentSlide) {
+                        el.style.display = 'block';
+                        el.style.opacity = '0';
+                        el.style.pointerEvents = 'none';
+                    } else {
+                        el.style.display = 'block';
+                        el.style.opacity = '1';
+                        el.style.pointerEvents = 'auto';
+                    }
+                });
+                animating = false;
+            }, 650);
+        }
+
+        prevBtn.onclick = function() {
+            if (animating) return;
+            const prev = (currentSlide - 1 + wrappers.length) % wrappers.length;
+            showSpotlightSlide(prev);
+        };
+        nextBtn.onclick = function() {
+            if (animating) return;
+            const next = (currentSlide + 1) % wrappers.length;
+            showSpotlightSlide(next);
+        };
+
+        // On load, ensure only the first is visible
+        wrappers.forEach((el, i) => {
+            if (i === 0) {
+                el.style.display = 'block';
+                el.style.opacity = '1';
+                el.style.pointerEvents = 'auto';
+                el.style.position = 'relative';
+            } else {
+                el.style.display = 'block';
+                el.style.opacity = '0';
+                el.style.pointerEvents = 'none';
+                el.style.position = 'absolute';
+                el.style.top = '0';
+                el.style.left = '0';
+                el.style.width = '100%';
+            }
+        });
+
+        // Add hover effects to activity cards
+        const activityCards = document.querySelectorAll('.activity__card');
+        activityCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Sophia Portfolio - Contact</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">Maria Sophia</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="interests.html" class="nav__link">Interests</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Contact Header -->
+        <section class="page-header section">
+            <div class="page-header__content">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">Let's connect and discuss opportunities, collaborations, or just have a chat!</p>
+            </div>
+        </section>
+
+        <!-- Contact Info & Form -->
+        <section class="contact-main section">
+            <div class="contact__container">
+                <!-- Contact Information -->
+                <div class="contact__info">
+                    <h3>Let's Start a Conversation</h3>
+                    <p>I'm always excited to connect with like-minded individuals, potential collaborators, and opportunities for growth. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
+                    
+                    <div class="contact__methods">
+                        <div class="contact__method">
+                            <i class='bx bx-envelope contact__method-icon'></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>msdh.ignacio@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__method">
+                            <i class='bx bx-map contact__method-icon'></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Singapore</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__method">
+                            <i class='bx bx-time contact__method-icon'></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social__links">
+                            <a href="#" class="social__link" title="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social__link" title="GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social__link" title="YouTube">
+                                <i class='bx bxl-youtube'></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-container">
+                    <form class="contact__form" id="contact-form" action="mailto:msdh.ignacio@gmail.com" method="POST" enctype="text/plain">
+                        <h3>Send Me a Message</h3>
+                        
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name *</label>
+                            <input type="text" id="name" name="Full Name" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address *</label>
+                            <input type="email" id="email" name="Email" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <select id="subject" name="Subject" class="form__input">
+                                <option value="">Select a topic...</option>
+                                <option value="Project Collaboration">Project Collaboration</option>
+                                <option value="Internship Opportunity">Internship Opportunity</option>
+                                <option value="Professional Networking">Professional Networking</option>
+                                <option value="Technical Questions">Technical Questions</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message *</label>
+                            <textarea id="message" name="Message" class="form__input form__textarea" rows="6" placeholder="Tell me about your project, questions, or just say hello!" required></textarea>
+                        </div>
+
+                        <button type="submit" class="form__submit">
+                            <span class="submit__text">Send Message</span>
+                            <i class='bx bx-send submit__icon'></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="cta section">
+            <div class="cta__content">
+                <h2>Ready to Work Together?</h2>
+                <p>I'm always excited about new opportunities and challenges</p>
+                <div class="cta__buttons">
+                    <a href="mailto:msdh.ignacio@gmail.com" class="button button--primary">
+                        <i class='bx bx-envelope'></i>
+                        Email Me Directly
+                    </a>
+                    <a href="projects.html" class="button button--secondary">
+                        <i class='bx bx-folder-open'></i>
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- About Section -->
+            <div class="footer__about">
+                <h3 class="footer__title">Maria Sophia</h3>
+                <p class="footer__subtitle">Aspiring IT Professional passionate about creating innovative digital solutions and building meaningful connections in the tech industry.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__icon" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="footer__icon" title="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="footer__icon" title="GitHub"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__links">
+                <h4>Quick Links</h4>
+                <ul class="footer__nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__contact">
+                <h4>Get In Touch</h4>
+                <div class="footer__contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <a href="mailto:msdh.ignacio@gmail.com">msdh.ignacio@gmail.com</a>
+                </div>
+                <div class="footer__contact-item">
+                    <i class='bx bx-map'></i>
+                    <span>Singapore</span>
+                </div>
+                <div class="footer__contact-item">
+                    <i class='bx bx-time'></i>
+                    <span>Available for opportunities</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2025 Maria Sophia Danyse Homigop Ignacio. All rights reserved.</p>
+            <div class="footer__badge">
+                <span>Made with</span>
+                <i class='bx bx-heart'></i>
+                <span>and lots of coffee</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Remove JS form handler, keep only FAQ and input animations
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq__question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq__answer');
+                const icon = this.querySelector('.faq__icon');
+                
+                // Close other open items
+                document.querySelectorAll('.faq__item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq__answer').style.maxHeight = null;
+                        item.querySelector('.faq__icon').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Form input animations
+        document.querySelectorAll('.form__input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
