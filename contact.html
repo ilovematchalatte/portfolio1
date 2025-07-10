@@ -50,14 +50,14 @@
                 <!-- Contact Information -->
                 <div class="contact__info">
                     <h3>Let's Start a Conversation</h3>
-                    <p>I'm always excited to connect with like-minded individuals, potential collaborators, and opportunities for growth. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
+                    <p class="body-text">I'm always excited to connect with like-minded individuals, potential collaborators, and opportunities for growth. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
                     
                     <div class="contact__methods">
                         <div class="contact__method">
                             <i class='bx bx-envelope contact__method-icon'></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>msdh.ignacio@gmail.com</p>
+                                <p class="body-text">msdh.ignacio@gmail.com</p>
                             </div>
                         </div>
                         
@@ -65,7 +65,7 @@
                             <i class='bx bx-map contact__method-icon'></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>Singapore</p>
+                                <p class="body-text">Singapore</p>
                             </div>
                         </div>
                         
@@ -73,7 +73,7 @@
                             <i class='bx bx-time contact__method-icon'></i>
                             <div>
                                 <h4>Response Time</h4>
-                                <p>Usually within 24 hours</p>
+                                <p class="body-text">Usually within 24 hours</p>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
 
                 <!-- Contact Form -->
                 <div class="contact__form-container">
-                    <form class="contact__form" id="contact-form" action="mailto:msdh.ignacio@gmail.com" method="POST" enctype="text/plain">
+                    <form class="contact__form" action="mailto:msdh.ignacio@gmail.com" method="POST" enctype="text/plain">
                         <h3>Send Me a Message</h3>
                         
                         <div class="form__group">
@@ -144,7 +144,7 @@
         <section class="cta section">
             <div class="cta__content">
                 <h2>Ready to Work Together?</h2>
-                <p>I'm always excited about new opportunities and challenges</p>
+                <p class="body-text">I'm always excited about new opportunities and challenges</p>
                 <div class="cta__buttons">
                     <a href="mailto:msdh.ignacio@gmail.com" class="button button--primary">
                         <i class='bx bx-envelope'></i>
@@ -216,7 +216,6 @@
 
     <script src="scripts.js"></script>
     <script>
-        // Remove JS form handler, keep only FAQ and input animations
         // FAQ accordion functionality
         document.querySelectorAll('.faq__question').forEach(question => {
             question.addEventListener('click', function() {
